@@ -1,3 +1,274 @@
+export const products = [
+  {
+    id: 1,
+    img: "../assets/industria/contactores.jpg",
+    title: "contactores",
+    link: "../subpages/contactores.html"
+  },
+  {
+    id: 2,
+    img: "../assets/industria/motores.jpg",
+    title: "motores",
+    link: "../subpages/motores.html"
+  },
+  {
+    id: 3,
+    img: "../assets/industria/variadores.jpg",
+    title: "variadores",
+    link: "../subpages/variadores.html"
+  },
+  {
+    id: 4,
+    img: "../assets/industria/relevos.jpg",
+    title: "relevos",
+    link: "../subpages/relevos.html"
+  },
+  {
+    id: 5,
+    img: "../assets/industria/arranque-suave.jpg",
+    title: "arranque-suave",
+    link: "../subpages/arranque-suave.html"
+  },
+  {
+    id: 6,
+    img: "../assets/industria/termomagneticas.jpg",
+    title: "termomagneticas",
+    link: "../subpages/termomagneticas.html"
+  },
+  {
+    id: 7,
+    img: "../assets/industria/diferenciales.jpg",
+    title: "diferenciales",
+    link: "../subpages/diferenciales.html"
+  },
+  {
+    id: 1,
+    img: "../assets/iluminacion/lamparas-vintage.jpg",
+    title: "lamparas",
+    link: "../subpages/lamparas.html",
+    link: "../subpages/lamparas.html"
+  },
+  {
+    id: 2,
+    img: "../assets/iluminacion/faroles.jpg",
+    title: "faroles",
+    link: "../subpages/faroles.html"
+  },
+  {
+    id: 3,
+    img: "../assets/iluminacion/bidireccionales.jpg",
+    title: "bidireccionales",
+    link: "../subpages/bidireccionales.html",
+  },
+  {
+    id: 4,
+    img: "../assets/iluminacion/plafones.jpg",
+    title: "plafones",
+    link: "../subpages/plafones.html",
+  },
+  {
+    id: 5,
+    img: "../assets/iluminacion/colgantes.jpg",
+    title: "colgantes",
+    link: "../subpages/colgates.html",
+  },
+  {
+    id: 1,
+    img: "../assets/conductores/taller.jpg",
+    title: "taller",
+  },
+  {
+    id: 2,
+    img: "../assets/conductores/subterraneo.jpg",
+    title: "subterraneo",
+  },
+  {
+    id: 3,
+    img: "../assets/conductores/retenax.jpg",
+    title: "retenax",
+  },
+  {
+    id: 4,
+    img: "../assets/conductores/preensamblado.jpg",
+    title: "preensamblado",
+  },
+  {
+    id: 5,
+    img: "../assets/conductores/utp.jpg",
+    title: "utp",
+  },
+  {
+    id: 6,
+    img: "../assets/conductores/mallado.jpg",
+    title: "mallado",
+  },
+  {
+    id: 7,
+    img: "../assets/conductores/soldadura.jpg",
+    title: "soldadura",
+  },
+  {
+    id: 8,
+    img: "../assets/conductores/desnudo-cu.jpg",
+    title: "cuDesnudo",
+  },
+  {
+    id: 9,
+    img: "../assets/conductores/unipolares.jpg",
+    title: "unipolares",
+  },
+  {
+    id: 1,
+    img: "../assets/terminales/terminal-cobre-estanado.jpg",
+    title: "terminal-cu",
+  },
+  {
+    id: 2,
+    img: "../assets/terminales/tubulares.jpg",
+    title: "punteras tubulares",
+  },
+  {
+    id: 3,
+    img: "../assets/terminales/preaislados.jpg",
+    title: "terminales preaislados",
+  },
+  {
+    id: 4,
+    img: "../assets/terminales/bimetalico-forjado.jpg",
+    title: "bimetalico forjado",
+  },
+  {
+    id: 5,
+    img: "../assets/terminales/bimetalico.jpg",
+    title: "bimetalico",
+  },
+  {
+    id: 6,
+    img: "../assets/terminales/terminal-aluminio.jpg",
+    title: "aluminio",
+  },
+  {
+    id: 1,
+    img: "../assets/normalizados/abrazaderas.jpg",
+    title: "abrazaderas",
+  },
+  {
+    id: 2,
+    img: "../assets/normalizados/accesorios-p-hilo-de-guardia.jpg",
+    title: "accesorios para hilo de guardia",
+  },
+  {
+    id: 3,
+    img: "../assets/normalizados/aisladores-de-porcelana.jpg",
+    title: "aisladores de porcelana",
+  },
+  {
+    id: 4,
+    img: "../assets/normalizados/aisladores-polimericos.jpg",
+    title: "aisladores polimericos",
+  },
+  {
+    id: 5,
+    img: "../assets/normalizados/anclajes.jpg",
+    title: "anclajes",
+  },
+  {
+    id: 6,
+    img: "../assets/normalizados/arandelas.jpg",
+    title: "arandelas",
+  },
+  {
+    id: 7,
+    img: "../assets/normalizados/ataduras-y-amarres.jpg",
+    title: "ataduras y amarres",
+  },
+  {
+    id: 8,
+    img: "../assets/normalizados/brazos.jpg",
+    title: "brazos",
+  },
+  {
+    id: 9,
+    img: "../assets/normalizados/bulones.jpg",
+    title: "bulones",
+  },
+  {
+    id: 10,
+    img: "../assets/normalizados/cables.jpg",
+    title: "cables",
+  },
+  {
+    id: 11,
+    img: "../assets/normalizados/crusetas.jpg",
+    title: "chapas",
+  },
+  {
+    id: 12,
+    img: "../assets/normalizados/elementos-de-cadena.jpg",
+    title: "elementos de cadena",
+  },
+  {
+    id: 13,
+    img: "../assets/normalizados/guardacabo.jpg",
+    title: "guardacabos",
+  },
+  {
+    id: 14,
+    img: "../assets/normalizados/jabalinas.jpg",
+    title: "jabalinas",
+  },
+  {
+    id: 15,
+    img: "../assets/normalizados/mensulas-y-morsas.jpg",
+    title: "mensulas y morsas",
+  },
+  {
+    id: 16,
+    img: "../assets/normalizados/morcetos-conectores-y-grampas.jpg",
+    title: "morcetos, conectores y grampas",
+  },
+  {
+    id: 17,
+    img: "../assets/normalizados/ojales.jpg",
+    title: "ojales",
+  },
+  {
+    id: 18,
+    img: "../assets/normalizados/pernos.jpg",
+    title: "pernos",
+  },
+  {
+    id: 19,
+    img: "../assets/normalizados/protecciones-electricas.jpg",
+    title: "protecciones electricas",
+  },
+  {
+    id: 20,
+    img: "../assets/normalizados/seccionadores.jpg",
+    title: "seccionadores",
+  },
+  {
+    id: 21,
+    img: "../assets/normalizados/tensores.jpg",
+    title: "tensores",
+  },
+  {
+    id: 22,
+    img: "../assets/normalizados/tillas.jpg",
+    title: "tillas",
+  },
+  {
+    id: 23,
+    img: "../assets/normalizados/varios.jpg",
+    title: "varios",
+  },
+  {
+    id: 24,
+    img: "../assets/normalizados/yugos.jpg",
+    title: "yugos",
+  },
+]
+
 export const logos = [
   {
     id: 1,
