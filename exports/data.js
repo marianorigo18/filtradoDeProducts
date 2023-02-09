@@ -428,6 +428,7 @@ export const iluminacionT = [
     img: "../assets/iluminacion/lamparas-vintage.jpg",
     title: "lamparas",
     link: "../subpages/lamparas.html",
+    categories: 'plafones, embutir, empotrar, aplicar, sobreponer',
   },
   {
     id: 2,
@@ -444,8 +445,9 @@ export const iluminacionT = [
   {
     id: 4,
     img: "../assets/iluminacion/plafones.jpg",
-    title: "plafones",
+    title: "plafones embutir, aplicar",
     link: "#",
+    categories: ['plafones, embutir, empotrar, aplicar, sobreponer'],
   },
   {
     id: 5,

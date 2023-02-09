@@ -1,21 +1,17 @@
-import {products} from './exports/data.js'
+import {industriaT, iluminacionT, conductoresT, terminalesT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosBauhaus, herramientasT, morceteriaT} from './exports/data.js';
 
-/*function filtrar(param){
-    for(let categoria of topic){
-        let encontrado = categoria.title.includes(param)
-        if(encontrado){
-            console.log(categoria)
-        }
-    }
-}*/
+const products = [...industriaT, ...iluminacionT, ...conductoresT, ...terminalesT, ...normalizadosT, ...instrumentosT, ...aereoT, ...emergenciaT, ...armadosBauhaus, ...morceteriaT]
+
+console.log(iluminacionT[0].categories)
+
 
 function filtrar(param){
-    const results = products.filter(categoria => categoria.title.includes(param));
+    const results = iluminacionT.filter((categoria, i) => categoria.title.includes(param));
     for(let result of results){
         console.log(result)
     }
 }
-filtrar('tensor')
+filtrar('plaf')
 
 
 
