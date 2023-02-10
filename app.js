@@ -1,17 +1,34 @@
+const $form = document.querySelector('#form');
+const $input = document.querySelector('#input');
+
 import {industriaT, iluminacionT, conductoresT, terminalesT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosBauhaus, herramientasT, morceteriaT} from './exports/data.js';
 
-const products = [...industriaT, ...iluminacionT, ...conductoresT, ...terminalesT, ...normalizadosT, ...instrumentosT, ...aereoT, ...emergenciaT, ...armadosBauhaus, ...morceteriaT]
+asignarListeners()
+function asignarListeners(){
+    $form.addEventListener('submit', capturarData);
+    // $input.addEventListener('keyup', mostrarSugerencias)
+}
 
-console.log(iluminacionT[0].categories)
 
-
-function filtrar(param){
-    const results = iluminacionT.filter((categoria, i) => categoria.title.includes(param));
-    for(let result of results){
-        console.log(result)
+function capturarData(e){
+    e.preventDefault()
+    let input = e.target.querySelector('input').value;
+    if(input == ""){
+        console.log('ingrese una palabra');
+    }else{
+        filtrarArray(input)
     }
 }
-filtrar('plaf')
 
-
-
+function filtrarArray (param){
+    const results = iluminacionT.filter(elem => elem.categories.includes(param)) 
+        if(results.length <= 0){
+            console.log('no se encuentra este articulo, intenta buscar con otras palabras');
+        }else{
+            for(const product of results){
+                console.log("Ir a " + product.title)
+                console.log("pagina " + product.link)
+                console.log("categorias: " + product.categories)
+            }
+        }
+}
