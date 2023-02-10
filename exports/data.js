@@ -1,274 +1,634 @@
-export const products = [
+export const categories = [
   {
     id: 1,
-    img: "../assets/industria/contactores.jpg",
-    title: "contactores",
-    link: "../subpages/contactores.html"
+    img: "../assets/topics/industria.jpg",
+    phrase: "optimiza tu industria con los mejores componentes",
+    title: "linea industrial",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/industria/contactores.jpg",
+        title: "contactores",
+      },
+      {
+        id: 2,
+        img: "../assets/industria/motores.jpg",
+        title: "motores",
+      },
+      {
+        id: 3,
+        img: "../assets/industria/variadores.jpg",
+        title: "variadores",
+      },
+      {
+        id: 4,
+        img: "../assets/industria/relevos.jpg",
+        title: "relevos",
+      },
+      {
+        id: 5,
+        img: "../assets/industria/arranque-suave.jpg",
+        title: "arranque-suave",
+      },
+      {
+        id: 6,
+        img: "../assets/industria/termomagneticas.jpg",
+        title: "termomagneticas",
+      },
+      {
+        id: 7,
+        img: "../assets/industria/diferenciales.jpg",
+        title: "diferenciales",
+      },
+    ],
+    link: "/electricidad-centro/industria",
   },
   {
     id: 2,
-    img: "../assets/industria/motores.jpg",
-    title: "motores",
-    link: "../subpages/motores.html"
+    img: "../assets/topics/iluminacion.jpg",
+    phrase: "encontra todo para iluminar tu hogar",
+    title: "iluminacion",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/iluminacion/lamparas-vintage.jpg",
+        title: "lamparas",
+        link: "../subpages/lamparas.html",
+        categories: "luz, luces, lampara, led, comun, bulbo",
+      },
+      {
+        id: 2,
+        img: "../assets/iluminacion/faroles.jpg",
+        title: "faroles",
+        link: "../subpages/faroles.html",
+        categories: "luz, luces, faroles, pared, columna, aplicar",
+      },
+      {
+        id: 3,
+        img: "../assets/iluminacion/bidireccionales.jpg",
+        title: "bidireccionales",
+        link: "../subpages/bidireccionales.html",
+        categories: "luz, luces, bidirecccional, unidireccional, iluminacion, aplicar",
+      },
+      {
+        id: 4,
+        img: "../assets/iluminacion/plafones.jpg",
+        title: "plafones",
+        link: "../subpages/plafones.html",
+        categories: "luces, plafones, embutir, empotrar, aplicar, sobreponer",
+      },
+      {
+        id: 5,
+        img: "../assets/iluminacion/colgantes.jpg",
+        title: "colgantes",
+        link: "colgantes.html",
+        categories: "colgantes, pantallas, colgar, techo",
+      },
+    ],
+    link: "/electricidad-centro/iluminacion",
   },
   {
     id: 3,
-    img: "../assets/industria/variadores.jpg",
-    title: "variadores",
-    link: "../subpages/variadores.html"
+    img: "../assets/topics/conductoresfour.jpg",
+    phrase: "conecta",
+    title: "conductores",
+    categories:[
+      {
+        id: 1,
+        img: "../assets/conductores/taller.jpg",
+        title: "taller",
+      },
+      {
+        id: 2,
+        img: "../assets/conductores/subterraneo.jpg",
+        title: "subterraneo",
+      },
+      {
+        id: 3,
+        img: "../assets/conductores/retenax.jpg",
+        title: "retenax",
+      },
+      {
+        id: 4,
+        img: "../assets/conductores/preensamblado.jpg",
+        title: "preensamblado",
+      },
+      {
+        id: 5,
+        img: "../assets/conductores/utp.jpg",
+        title: "utp",
+      },
+      {
+        id: 6,
+        img: "../assets/conductores/mallado.jpg",
+        title: "mallado",
+      },
+      {
+        id: 7,
+        img: "../assets/conductores/soldadura.jpg",
+        title: "soldadura",
+      },
+      {
+        id: 8,
+        img: "../assets/conductores/desnudo-cu.jpg",
+        title: "cuDesnudo",
+      },
+      {
+        id: 9,
+        img: "../assets/conductores/unipolares.jpg",
+        title: "unipolares",
+      },
+    ],
+    link: "/electricidad-centro/conductores",
   },
   {
     id: 4,
-    img: "../assets/industria/relevos.jpg",
-    title: "relevos",
-    link: "../subpages/relevos.html"
+    img: "../assets/topics/terminales.jpg",
+    phrase: "terminales de compresion",
+    title: "terminales",
+    categories:[
+      {
+        id: 1,
+        img: "../assets/terminales/terminal-cobre-estanado.jpg",
+        title: "terminal-cu",
+      },
+      {
+        id: 2,
+        img: "../assets/terminales/tubulares.jpg",
+        title: "punteras tubulares",
+      },
+      {
+        id: 3,
+        img: "../assets/terminales/preaislados.jpg",
+        title: "terminales preaislados",
+      },
+      {
+        id: 4,
+        img: "../assets/terminales/bimetalico-forjado.jpg",
+        title: "bimetalico forjado",
+      },
+      {
+        id: 5,
+        img: "../assets/terminales/bimetalico.jpg",
+        title: "bimetalico",
+      },
+      {
+        id: 6,
+        img: "../assets/terminales/terminal-aluminio.jpg",
+        title: "aluminio",
+      },
+    ],
+    link: "/electricidad-centro/terminales",
   },
   {
     id: 5,
-    img: "../assets/industria/arranque-suave.jpg",
-    title: "arranque-suave",
-    link: "../subpages/arranque-suave.html"
+    img: "../assets/topics/normalizados.jpg",
+    phrase: "materiles electricos de norma",
+    title: "materiales normalizados",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/normalizados/abrazaderas.jpg",
+        title: "abrazaderas",
+      },
+      {
+        id: 2,
+        img: "../assets/normalizados/accesorios-p-hilo-de-guardia.jpg",
+        title: "accesorios para hilo de guardia",
+      },
+      {
+        id: 3,
+        img: "../assets/normalizados/aisladores-de-porcelana.jpg",
+        title: "aisladores de porcelana",
+      },
+      {
+        id: 4,
+        img: "../assets/normalizados/aisladores-polimericos.jpg",
+        title: "aisladores polimericos",
+      },
+      {
+        id: 5,
+        img: "../assets/normalizados/anclajes.jpg",
+        title: "anclajes",
+      },
+      {
+        id: 6,
+        img: "../assets/normalizados/arandelas.jpg",
+        title: "arandelas",
+      },
+      {
+        id: 7,
+        img: "../assets/normalizados/ataduras-y-amarres.jpg",
+        title: "ataduras y amarres",
+      },
+      {
+        id: 8,
+        img: "../assets/normalizados/brazos.jpg",
+        title: "brazos",
+      },
+      {
+        id: 9,
+        img: "../assets/normalizados/bulones.jpg",
+        title: "bulones",
+      },
+      {
+        id: 10,
+        img: "../assets/normalizados/cables.jpg",
+        title: "cables",
+      },
+      {
+        id: 11,
+        img: "../assets/normalizados/crusetas.jpg",
+        title: "chapas",
+      },
+      {
+        id: 12,
+        img: "../assets/normalizados/elementos-de-cadena.jpg",
+        title: "elementos de cadena",
+      },
+      {
+        id: 13,
+        img: "../assets/normalizados/guardacabo.jpg",
+        title: "guardacabos",
+      },
+      {
+        id: 14,
+        img: "../assets/normalizados/jabalinas.jpg",
+        title: "jabalinas",
+      },
+      {
+        id: 15,
+        img: "../assets/normalizados/mensulas-y-morsas.jpg",
+        title: "mensulas y morsas",
+      },
+      {
+        id: 16,
+        img: "../assets/normalizados/morcetos-conectores-y-grampas.jpg",
+        title: "morcetos, conectores y grampas",
+      },
+      {
+        id: 17,
+        img: "../assets/normalizados/ojales.jpg",
+        title: "ojales",
+      },
+      {
+        id: 18,
+        img: "../assets/normalizados/pernos.jpg",
+        title: "pernos",
+      },
+      {
+        id: 19,
+        img: "../assets/normalizados/protecciones-electricas.jpg",
+        title: "protecciones electricas",
+      },
+      {
+        id: 20,
+        img: "../assets/normalizados/seccionadores.jpg",
+        title: "seccionadores",
+      },
+      {
+        id: 21,
+        img: "../assets/normalizados/tensores.jpg",
+        title: "tensores",
+      },
+      {
+        id: 22,
+        img: "../assets/normalizados/tillas.jpg",
+        title: "tillas",
+      },
+      {
+        id: 23,
+        img: "../assets/normalizados/varios.jpg",
+        title: "varios",
+      },
+      {
+        id: 24,
+        img: "../assets/normalizados/yugos.jpg",
+        title: "yugos",
+      },
+    ],
+    link: "/electricidad-centro/normalizados",
   },
   {
     id: 6,
-    img: "../assets/industria/termomagneticas.jpg",
-    title: "termomagneticas",
-    link: "../subpages/termomagneticas.html"
+    img: "../assets/topics/instrumentos.jpg",
+    phrase: "testea todas tu conecciones",
+    title: "instrumentos de medicion",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/instrumentos/buscapolo-inductivo.jpg",
+        title: "buscapolo inductivo",
+      },
+      {
+        id: 2,
+        img: "../assets/instrumentos/buscapolo.jpg",
+        title: "buscapolo",
+      },
+      {
+        id: 3,
+        img: "../assets/instrumentos/multimetro-two.jpg",
+        title: "multimetro",
+      },
+      {
+        id: 4,
+        img: "../assets/instrumentos/multimetro.jpg",
+        title: "multimetro",
+      },
+      {
+        id: 5,
+        img: "../assets/instrumentos/pinza-amperometrica.jpg",
+        title: "pinza amperometrica",
+      },
+      {
+        id: 6,
+        img: "../assets/instrumentos/punta-prueba.jpg",
+        title: "punta de prueba",
+      },
+    ],
+    link: "/electricidad-centro/instrumentos-de-medicion",
   },
   {
     id: 7,
-    img: "../assets/industria/diferenciales.jpg",
-    title: "diferenciales",
-    link: "../subpages/diferenciales.html"
-  },
-  {
-    id: 1,
-    img: "../assets/iluminacion/lamparas-vintage.jpg",
-    title: "lamparas",
-    link: "../subpages/lamparas.html",
-    link: "../subpages/lamparas.html"
-  },
-  {
-    id: 2,
-    img: "../assets/iluminacion/faroles.jpg",
-    title: "faroles",
-    link: "../subpages/faroles.html"
-  },
-  {
-    id: 3,
-    img: "../assets/iluminacion/bidireccionales.jpg",
-    title: "bidireccionales",
-    link: "../subpages/bidireccionales.html",
-  },
-  {
-    id: 4,
-    img: "../assets/iluminacion/plafones.jpg",
-    title: "plafones",
-    link: "../subpages/plafones.html",
-  },
-  {
-    id: 5,
-    img: "../assets/iluminacion/colgantes.jpg",
-    title: "colgantes",
-    link: "../subpages/colgates.html",
-  },
-  {
-    id: 1,
-    img: "../assets/conductores/taller.jpg",
-    title: "taller",
-  },
-  {
-    id: 2,
-    img: "../assets/conductores/subterraneo.jpg",
-    title: "subterraneo",
-  },
-  {
-    id: 3,
-    img: "../assets/conductores/retenax.jpg",
-    title: "retenax",
-  },
-  {
-    id: 4,
-    img: "../assets/conductores/preensamblado.jpg",
-    title: "preensamblado",
-  },
-  {
-    id: 5,
-    img: "../assets/conductores/utp.jpg",
-    title: "utp",
-  },
-  {
-    id: 6,
-    img: "../assets/conductores/mallado.jpg",
-    title: "mallado",
-  },
-  {
-    id: 7,
-    img: "../assets/conductores/soldadura.jpg",
-    title: "soldadura",
+    img: "../assets/topics/aereo.jpg",
+    phrase: "desplasa tus conecciones por los aires",
+    title: "linea aerea",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/aereo/pkd-14.jpg",
+        title: "pkd-14",
+      },
+      {
+        id: 2,
+        img: "../assets/aereo/pkd-16.jpg",
+        title: "pkd-16",
+      },
+      {
+        id: 3,
+        img: "../assets/aereo/pkd-31.jpg",
+        title: "pkd-31",
+      },
+      {
+        id: 4,
+        img: "../assets/aereo/pkd20.jpg",
+        title: "pkd-20",
+      },
+      {
+        id: 5,
+        img: "../assets/aereo/pkr20.jpg",
+        title: "pkr-20",
+      },
+      {
+        id: 6,
+        img: "../assets/aereo/pks-10cf.jpg",
+        title: "pks-10 cf",
+      },
+      {
+        id: 7,
+        img: "../assets/aereo/preensamblado.jpg",
+        title: "preensamblado",
+      },
+    ],
+    link: "/electricidad-centro/linea-aerea",
   },
   {
     id: 8,
-    img: "../assets/conductores/desnudo-cu.jpg",
-    title: "cuDesnudo",
+    img: "../assets/topics/conjuntos.jpg",
+    phrase: "descubri toda las lineas de conjuntos armados que temos para vos.",
+    title: "conjuntos armados",
+    categories: [
+      {
+        id: 8,
+        img: "../assets/armados/bauhaus-madera-3p.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 9,
+        img: "../assets/armados/bauhaus-madera.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 10,
+        img: "../assets/armados/bauhaus-orange-2p-1t.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 11,
+        img: "../assets/armados/bauhaus-dos-tv.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 4,
+        img: "../assets/armados/bauhaus-2p-1t.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 5,
+        img: "../assets/armados/bauhaus-dos-tv.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 6,
+        img: "../assets/armados/bauhaus-emer-1t.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 7,
+        img: "../assets/armados/bauhaus-green-doble-toma.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 12,
+        img: "../assets/armados/bauhaus-red-2p-1t.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 13,
+        img: "../assets/armados/bauhaus-vidrio-doble-punto.jpg",
+        title: "bauhaus",
+      },
+      {
+        id: 14,
+        img: "../assets/armados/bauhaus-vidrio-doble-toma.jpg",
+        title: "bauhaus",
+      },
+    ],
+    link: "/electricidad-centro/conjuntos-armados",
   },
   {
     id: 9,
-    img: "../assets/conductores/unipolares.jpg",
-    title: "unipolares",
-  },
-  {
-    id: 1,
-    img: "../assets/terminales/terminal-cobre-estanado.jpg",
-    title: "terminal-cu",
-  },
-  {
-    id: 2,
-    img: "../assets/terminales/tubulares.jpg",
-    title: "punteras tubulares",
-  },
-  {
-    id: 3,
-    img: "../assets/terminales/preaislados.jpg",
-    title: "terminales preaislados",
-  },
-  {
-    id: 4,
-    img: "../assets/terminales/bimetalico-forjado.jpg",
-    title: "bimetalico forjado",
-  },
-  {
-    id: 5,
-    img: "../assets/terminales/bimetalico.jpg",
-    title: "bimetalico",
-  },
-  {
-    id: 6,
-    img: "../assets/terminales/terminal-aluminio.jpg",
-    title: "aluminio",
-  },
-  {
-    id: 1,
-    img: "../assets/normalizados/abrazaderas.jpg",
-    title: "abrazaderas",
-  },
-  {
-    id: 2,
-    img: "../assets/normalizados/accesorios-p-hilo-de-guardia.jpg",
-    title: "accesorios para hilo de guardia",
-  },
-  {
-    id: 3,
-    img: "../assets/normalizados/aisladores-de-porcelana.jpg",
-    title: "aisladores de porcelana",
-  },
-  {
-    id: 4,
-    img: "../assets/normalizados/aisladores-polimericos.jpg",
-    title: "aisladores polimericos",
-  },
-  {
-    id: 5,
-    img: "../assets/normalizados/anclajes.jpg",
-    title: "anclajes",
-  },
-  {
-    id: 6,
-    img: "../assets/normalizados/arandelas.jpg",
-    title: "arandelas",
-  },
-  {
-    id: 7,
-    img: "../assets/normalizados/ataduras-y-amarres.jpg",
-    title: "ataduras y amarres",
-  },
-  {
-    id: 8,
-    img: "../assets/normalizados/brazos.jpg",
-    title: "brazos",
-  },
-  {
-    id: 9,
-    img: "../assets/normalizados/bulones.jpg",
-    title: "bulones",
+    img: "../assets/topics/emergencia.jpg",
+    phrase: "no te quedaras sin iluminacion",
+    title: "luces de emergencia",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/luz-emergencia/baw-emergencia-30-leds-two.jpg",
+        title: "baw 30 leds 2",
+      },
+      {
+        id: 2,
+        img: "../assets/luz-emergencia/baw-emergencia-30-leds.jpg",
+        title: "baw 30 leds",
+      },
+      {
+        id: 3,
+        img: "../assets/luz-emergencia/baw-emergencia-60-leds-two.jpg",
+        title: "baw 60 leds 2",
+      },
+      {
+        id: 4,
+        img: "../assets/luz-emergencia/baw-emergencia-60-leds.jpg",
+        title: "baw 60 leds",
+      },
+      {
+        id: 5,
+        img: "../assets/luz-emergencia/emergencia-atomlux-2020.jpg",
+        title: "atomlux 2020",
+      },
+      {
+        id: 6,
+        img: "../assets/luz-emergencia/emergencia-atomlux-2045.jpg",
+        title: "atomlux 2045",
+      },
+      {
+        id: 7,
+        img: "../assets/luz-emergencia/emergencia-atomlux-alto-brillo.jpg",
+        title: "atomlux alto brillo",
+      },
+      {
+        id: 8,
+        img: "../assets/luz-emergencia/idoler-emergencia-30-leds.jpg",
+        title: "idoler 30 leds",
+      },
+      {
+        id: 9,
+        img: "../assets/luz-emergencia/idoler-emergencia-60-leds.jpg",
+        title: "idoler 60 leds",
+      },
+      {
+        id: 10,
+        img: "../assets/luz-emergencia/macroled-emergencia-90-leds.jpg",
+        title: "macroled 90 leds",
+      },
+      {
+        id: 11,
+        img: "../assets/luz-emergencia/tbcin-autonoma-15.jpg",
+        title: "tbcin 15w",
+      },
+    ],
+    link: "/electricidad-centro/luces-emergencia",
   },
   {
     id: 10,
-    img: "../assets/normalizados/cables.jpg",
-    title: "cables",
+    img: "../assets/topics/herramientas.jpg",
+    phrase: "herramientas de seleccion",
+    title: "herramientas",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/herramientas/her-elec/moladora-stanley.jpg",
+        title: "amoladora",
+      },
+      {
+        id: 2,
+        img: "../assets/herramientas/her-elec/taladro-inalambrico-stanley-12v.jpg",
+        title: "taladro 12v",
+      },
+      {
+        id: 3,
+        img: "../assets/herramientas/her-elec/taladro-inalambrico-stanley-20v.jpg",
+        title: "taladro 20v",
+      },
+      {
+        id: 4,
+        img: "../assets/herramientas/her-elec/taladro-stanley.jpg",
+        title: "taladro 700w",
+      },
+    ],
+    link: "/electricidad-centro/herramientas",
   },
   {
     id: 11,
-    img: "../assets/normalizados/crusetas.jpg",
-    title: "chapas",
-  },
-  {
-    id: 12,
-    img: "../assets/normalizados/elementos-de-cadena.jpg",
-    title: "elementos de cadena",
-  },
-  {
-    id: 13,
-    img: "../assets/normalizados/guardacabo.jpg",
-    title: "guardacabos",
-  },
-  {
-    id: 14,
-    img: "../assets/normalizados/jabalinas.jpg",
-    title: "jabalinas",
-  },
-  {
-    id: 15,
-    img: "../assets/normalizados/mensulas-y-morsas.jpg",
-    title: "mensulas y morsas",
-  },
-  {
-    id: 16,
-    img: "../assets/normalizados/morcetos-conectores-y-grampas.jpg",
-    title: "morcetos, conectores y grampas",
-  },
-  {
-    id: 17,
-    img: "../assets/normalizados/ojales.jpg",
-    title: "ojales",
-  },
-  {
-    id: 18,
-    img: "../assets/normalizados/pernos.jpg",
-    title: "pernos",
-  },
-  {
-    id: 19,
-    img: "../assets/normalizados/protecciones-electricas.jpg",
-    title: "protecciones electricas",
-  },
-  {
-    id: 20,
-    img: "../assets/normalizados/seccionadores.jpg",
-    title: "seccionadores",
-  },
-  {
-    id: 21,
-    img: "../assets/normalizados/tensores.jpg",
-    title: "tensores",
-  },
-  {
-    id: 22,
-    img: "../assets/normalizados/tillas.jpg",
-    title: "tillas",
-  },
-  {
-    id: 23,
-    img: "../assets/normalizados/varios.jpg",
-    title: "varios",
-  },
-  {
-    id: 24,
-    img: "../assets/normalizados/yugos.jpg",
-    title: "yugos",
+    img: "../assets/topics/morceteria.jpg",
+    phrase: "deriva tus conecciones",
+    title: "morceteria",
+    categories: [
+      {
+        id: 1,
+        img: "../assets/morceteria/conector-diente-tipo-peine.jpg",
+        title: "conector diente tipo peine",
+      },
+      {
+        id: 2,
+        img: "../assets/morceteria/conector-pat.jpg",
+        title: "conector pat",
+      },
+      {
+        id: 3,
+        img: "../assets/morceteria/grampa-fijacion-3-bulones.jpg",
+        title: "grampa fijacion 3 bulones",
+      },
+      {
+        id: 4,
+        img: "../assets/morceteria/grampa-fijacion-mn200.jpg",
+        title: "grampa fijacion mn200",
+      },
+      {
+        id: 5,
+        img: "../assets/morceteria/grampa-prensacables.jpg",
+        title: "grampa prensacable",
+      },
+      {
+        id: 6,
+        img: "../assets/morceteria/morceto-2-bulones.jpg",
+        title: "morceto 2 bulones",
+      },
+      {
+        id: 7,
+        img: "../assets/morceteria/morceto-3-bulones.jpg",
+        title: "morceto 3 bulones",
+      },
+      {
+        id: 8,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-gpa1-gpb1.jpg",
+        title: "morceto bifilar paralelo gpa1 gpb1",
+      },
+      {
+        id: 9,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-gpa2-gpa3-gpa4.jpg",
+        title: "morceto bifilar paralelo gpa2 gpa3 gpa4",
+      },
+      {
+        id: 10,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-gpa2-gpa3-gpa4.jpg",
+        title: "morceto bifilar paralelo gpb2 gpb3 gpb4",
+      },
+      {
+        id: 11,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-mpa1-cuerpo-roscado.jpg",
+        title: "morceto bifilar paralelo mpa1 cuerpo roscado",
+      },
+      {
+        id: 12,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-mpa2-cuerpo-roscado.jpg",
+        title: "morceto bifilar paralelo mpa2 cuerpo roscado",
+      },
+      {
+        id: 13,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-mpb1-cuerpo-roscado.jpg",
+        title: "morceto bifilar paralelo mpb1 cuerpo roscado",
+      },
+      {
+        id: 14,
+        img: "../assets/morceteria/morceto-bifilar-paralelo-mpb2-cuerpo-roscado.jpg",
+        title: "morceto bifilar paralelo mpb2 cuerpo roscado",
+      },
+    ],
+    link: "/electricidad-centro/morceteria",
   },
 ]
-
 export const logos = [
   {
     id: 1,
@@ -434,7 +794,7 @@ export const iluminacionT = [
     id: 2,
     img: "../assets/iluminacion/faroles.jpg",
     title: "faroles",
-    link: "#",
+    link: "../subpages/faroles.html",
     categories: "luz, luces, faroles, pared, columna, aplicar",
   },
   {

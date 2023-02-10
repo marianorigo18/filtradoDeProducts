@@ -1,34 +1,52 @@
+import {categories} from './exports/data.js';
+
 const $form = document.querySelector('#form');
 const $input = document.querySelector('#input');
 
-import {industriaT, iluminacionT, conductoresT, terminalesT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosBauhaus, herramientasT, morceteriaT} from './exports/data.js';
-
 asignarListeners()
-function asignarListeners(){
-    $form.addEventListener('submit', capturarData);
-    // $input.addEventListener('keyup', mostrarSugerencias)
-}
 
+function asignarListeners(){
+    $form.addEventListener('submit', capturarData)
+    // $input.addEventListener('keyup', showSuggestions)
+}
 
 function capturarData(e){
     e.preventDefault()
-    let input = e.target.querySelector('input').value;
-    if(input == ""){
-        console.log('ingrese una palabra');
+    if($input.value == ""){
+        console.log('No se permiten valores vacios');
     }else{
-        filtrarArray(input)
+        filtrarElementos($input.value)
     }
+    $form.reset();
 }
 
-function filtrarArray (param){
-    const results = iluminacionT.filter(elem => elem.categories.includes(param)) 
-        if(results.length <= 0){
+function filtrarElementos(param){
+    categories.map((elemento)=>{
+        let result = elemento.categories.filter(elemento => elemento.title.includes(param))
+        if(result.length <= 0){
             console.log('no se encuentra este articulo, intenta buscar con otras palabras');
         }else{
-            for(const product of results){
-                console.log("Ir a " + product.title)
-                console.log("pagina " + product.link)
-                console.log("categorias: " + product.categories)
+            for(let item of result){
+                console.log(item)
             }
         }
+    })
 }
+
+// function showSuggestions(){
+//     if($input.value.length >= 1){
+//         filtrarArray($input.value)
+//     }
+// }
+
+
+// function filtrarArray (param){
+//     const results = iluminacionT.filter(elem => elem.categories.includes(param)) 
+//         if(results.length <= 0){
+//             console.log('no se encuentra este articulo, intenta buscar con otras palabras');
+//         }else{
+//             for(const product of results){
+//                 console.log(`${product.link} sugerencias ${product.title}, categorias ${product.categories}`);
+//             }
+//         }
+// }
