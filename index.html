@@ -12,14 +12,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <form action="" id="form">
-            <input type="text" id="input" placeholder="busca aqui..">
+            <input type="text" id="input" placeholder="busca aqui.." autocomplete="off">
         </form>
+        <ul id="sugestions">
+
+        </ul>
     </div>
     <script type="module" src="./exports/data.js"></script>
     <script type="module" src="app.js"></script>
