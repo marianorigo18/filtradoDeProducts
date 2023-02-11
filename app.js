@@ -4,7 +4,7 @@ const $sugestions = document.querySelector('#sugestions');
 import {categories} from './exports/data.js';
 asignarListeners()
 
-
+let sugerencias = [];
 
 function asignarListeners(){
     $form.addEventListener('keyup', capturarData)
@@ -24,10 +24,10 @@ function capturarData(e){
 function filtrarElementos(param){
     categories.map((elemento)=>{
         let result = elemento.categories.filter(elemento => elemento.title.includes(param))
-
         if(result.length >= 1){
             for(let item of result){
-                showElements(item)
+                sugerencias.push(item)
+                showElements(sugerencias)
                 return;
             }
         }
@@ -36,6 +36,5 @@ function filtrarElementos(param){
 
 function showElements(item){
     console.log(item)
-    
-    $sugestions.innerHTML =  `<li><a href="${item.link}">${item.title}</a></li>`;
+    // $sugestions.innerHTML =  `<li><a href="${item.link}">${item.title}</a></li>`;
 }
