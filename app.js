@@ -49,12 +49,6 @@ function redirection(param){
     })
 }
 
-// inputText.addEventListener('blur', () => {
-//     let item = listGroup.querySelectorAll('li');
-//     Array.from(item).forEach(element => {
-//         element.style.display = '';
-//     })
-// })
 
 
 
