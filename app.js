@@ -15,9 +15,9 @@ inputText.addEventListener('focus', () => {
 
 inputText.addEventListener('keydown', (e) => {
     let itemActual = Array.from(item).findIndex(item => item.classList.contains('active'));
-    console.log(item.length);
     if(e.keyCode==13){
         e.preventDefault();
+        redirection(item[itemActual].firstChild.getAttribute('href'))
         if(item[itemActual]){
             item[itemActual].click();
         }
@@ -43,6 +43,11 @@ item.forEach(li => {
     })
 })
 
+function redirection(param){
+    setTimeout(function(){
+        window.location.href=`${param}`
+    })
+}
 
 // inputText.addEventListener('blur', () => {
 //     let item = listGroup.querySelectorAll('li');

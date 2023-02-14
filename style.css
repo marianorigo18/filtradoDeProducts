@@ -17,8 +17,14 @@
     padding: 5px;
     display: none;
 }
+#sugestions li:hover{
+    background-color: lightblue;
+}
+.item-link{
+    display: block;
+}
 #sugestions li.active{
     color: #008;
-    background: #cef;
+    background-color: lightblue;
     border: 1px #008, solid;
 }
