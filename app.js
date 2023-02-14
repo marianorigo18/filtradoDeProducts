@@ -32,6 +32,7 @@ inputText.addEventListener('keydown', (e) => {
             itemActual = item.length -1;
         }
         item[itemActual].classList.add('active');
+        inputText.value = item[itemActual].textContent;
     }
 })
 
