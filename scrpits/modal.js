@@ -13,3 +13,12 @@ buttonOpenModal.addEventListener('click', () => {
 buttonClose.addEventListener('click', () => {
     modalContainer.classList.remove('open-modal')
 })
+
+modalContainer.addEventListener('click', (e) => {
+    console.log();
+    if(e.target.classList.contains('modal-container')){
+        modalContainer.classList.remove('open-modal')
+    }else{
+        return;
+    }
+})

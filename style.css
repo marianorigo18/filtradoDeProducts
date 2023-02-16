@@ -40,7 +40,7 @@
     display: grid;
     place-items: center;
     visibility: hidden;
-    z-index: -10;
+    z-index: -1;
 }
 .open-modal{
     visibility: visible;
