@@ -28,3 +28,44 @@
     background-color: lightblue;
     border: 1px #008, solid;
 }
+
+/*modal styles*/
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -10;
+}
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+.modal-content{
+    background-color: aliceblue;
+    width: 90vw;
+    height: 30vh;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.modal-container .close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.modal-container .close:hover, .close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;    
+}
